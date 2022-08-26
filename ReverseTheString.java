@@ -11,11 +11,11 @@ static void reverse(String str){
 	int start =0;
 	int end = revStr.length-1;
 	while(start<end){
-		if(revStr[start]=='_'){
+		if(revStr[start]=='_'){ //Ignoring spaces when tackled from front
 			start++;
 			continue;
 		}
-	else if(revStr[end]=='_'){
+	else if(revStr[end]=='_'){	//Ignoring spaces when tackled from end
 		end--;
 		continue;
 		}
